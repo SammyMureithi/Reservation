@@ -8,32 +8,42 @@ import AddIcon from '@mui/icons-material/Add';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 function DrawerReserve() {
-   
-  return (
-      <Drawer
-          variant='permanent'
-          open="true"
-          anchor='left'>
-          <Typography variant="h6">Periodic Table</Typography>
-          <List>
-              <ListItem>
-                  <DashboardIcon/>
-              <NavLink to="/">DashBoard</NavLink>
-              </ListItem>
-              <ListItem>
-                  <SearchIcon />
-                  <NavLink to="search">Search</NavLink>
-              </ListItem>
-              <ListItem>
+    const drawerWidth = 240;
+    return (
+        <div  className='drawer'>
+            <Drawer
+               
+                sx={{
+                    width: drawerWidth,
+                    flexShrink: 0,
+                    '& .MuiDrawer-paper': {
+                        width: drawerWidth,
+                        boxSizing: 'border-box',
+                    },
+                }}
+                variant='permanent'
+                anchor='left'>
+                <Typography variant="h6">Periodic Table</Typography>
+                <List>
+                    <ListItem className='drawerItemList'>
+                        <DashboardIcon />
+                        <NavLink to="/">DashBoard</NavLink>
+                    </ListItem>
+                    <ListItem className='drawerItemList'>
+                        <SearchIcon />
+                        <NavLink to="search">Search</NavLink>
+                    </ListItem>
+              <ListItem className='drawerItemList'>
                   <AddIcon />
                   <NavLink to="newReservation">New Researvation</NavLink>
               </ListItem>
-              <ListItem>
+              <ListItem className='drawerItemList'>
                   <ContentCopyIcon />
                   <NavLink to="newTable">New Table</NavLink>
              </ListItem>
           </List>
-    </Drawer>
+            </Drawer>
+            </div>
   )
 }
 

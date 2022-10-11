@@ -6,11 +6,75 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.drawerItemList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.indexPageDisplay{
+  width: 100%;
+}
+.indexPageDisplay button{
+  align-self: flex-start;
+}
+.btnIndexPage{
+  margin-top: 1rem;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
 .drawer{
+  color: white;
   background-color: black;
+}
+.searchDisplay{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.table h5{
+  align-self: flex-start;
+}
+table thead td{
+  font-size: large;
+}
+.table tr {
+  border: 2px solid white;
+}
+.tBody{
+  color: white;
+  background-color: black;
+}
+.searchInput{
+  margin: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+.displayHome{
+  display: flex;
+ 
+}
+.formReservation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formReservation label{
+  align-self: flex-start;
+}
+.formReservation button{
+  margin-top: 1rem;
+  width: fit-content;
 }
